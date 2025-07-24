@@ -24,7 +24,7 @@ function App() {
     setLoading(true);
 
     try {
-        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/ask`, {
+        const res = await fetch("https://ai-code-search-fullstack.onrender.com/api/ask", {
 
         method: "POST",
         headers: { "Content-Type": "application/json" },
