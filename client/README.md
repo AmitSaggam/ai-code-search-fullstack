@@ -15,26 +15,26 @@ It lets developers search for code snippets, ask programming questions, and get 
 ---
 
 ## 🛠️ Tech Stack
-**Frontend:** React, Vercel  
-**Backend:** Node.js, Express, Render  
-**AI Model:** Groq LLaMA 3 (`llama3-70b-8192`)  
+- **Frontend:** React, Vercel  
+- **Backend:** Node.js, Express, Render  
+- **AI Model:** Groq LLaMA 3 (`llama3-70b-8192`)  
 
 ---
 
 ## 📦 Installation (Run Locally)
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/your-username/ai-code-search-fullstack.git
-   cd ai-code-search-fullstack
-Setup backend
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/ai-code-search-fullstack.git
+cd ai-code-search-fullstack
 
+2. Setup Backend
 bash
 Copy
 Edit
 cd server
 npm install
-Add .env file:
+Create a .env file inside server/:
 
 env
 Copy
@@ -42,26 +42,25 @@ Edit
 GROQ_API_KEY=your_groq_api_key
 GROQ_MODEL=llama3-70b-8192
 PORT=5000
-Run server:
+Run the backend server:
 
 bash
 Copy
 Edit
 node index.js
-Setup frontend
-
+3. Setup Frontend
 bash
 Copy
 Edit
 cd client
 npm install
-Update src/config.js (or where your API URL is stored):
+Update API endpoint in src/config.js (or wherever your API URL is stored):
 
 js
 Copy
 Edit
 export const API_URL = "http://localhost:5000/api/ask";
-Run frontend:
+Run the frontend:
 
 bash
 Copy
