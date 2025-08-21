@@ -1,12 +1,71 @@
-# React + Vite
+# 🚀 AI Code Search (Fullstack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An **AI-powered code search and explanation app** built with **React (frontend), Node.js/Express (backend), and Groq API (LLaMA 3 models)**.  
+It lets developers search for code snippets, ask programming questions, and get instant AI-generated solutions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
+- 🔍 **Ask coding questions** (C++, Python, JavaScript, etc.)  
+- 🤖 **AI-generated answers** powered by **Groq LLaMA 3**  
+- ⚡ **Fast response time** (low-latency inference)  
+- 🌐 **Full-stack app** with **React + Express**  
+- 🚀 **Deployed on Vercel (frontend) & Render (backend)**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+**Frontend:** React, Vercel  
+**Backend:** Node.js, Express, Render  
+**AI Model:** Groq LLaMA 3 (`llama3-70b-8192`)  
+
+---
+
+## 📦 Installation (Run Locally)
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/AmitSaggam/ai-code-search-fullstack.git
+   cd ai-code-search-fullstack
+   
+2. Setup backend
+-cd server
+-npm install
+
+3. Add .env file:
+-GROQ_API_KEY=your_groq_api_key
+-GROQ_MODEL=llama3-70b-8192
+-PORT=5000
+
+4. Run server:
+-node index.js
+
+5. Setup frontend
+-cd client
+-npm install
+
+6. Update src/config.js (or where your API URL is stored):
+-export const API_URL = "http://localhost:5000/api/ask";
+
+7. Run frontend:
+-npm start
+
+🌍 Deployment
+Frontend (Vercel): ai-code-search-fullstack.vercel.app
+
+Backend (Render): ai-code-search-fullstack.onrender.com
+
+🧑‍💻 Example Queries
+-Give me binary search code in C++.
+-Explain time complexity of merge sort.
+-Python code to reverse a linked list
+
+📸 Screenshots
+<img width="937" height="440" alt="image" src="https://github.com/user-attachments/assets/92e594a4-8def-42e1-a0ad-ec2d3c168b63" />
+
+
+🤝 Contributing
+Contributions are welcome! Feel free to open issues and PRs.
+
+📜 License
+This project is licensed under the MIT License.
