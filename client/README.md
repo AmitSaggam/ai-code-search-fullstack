@@ -25,7 +25,7 @@ It lets developers search for code snippets, ask programming questions, and get 
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/ai-code-search-fullstack.git
+git clone https://github.com/AmitSaggam/ai-code-search-fullstack.git
 cd ai-code-search-fullstack
 ```
 
@@ -60,7 +60,7 @@ npm install
 
 export const API_URL = "http://localhost:5000/api/ask";
 ```
-Run the frontend:
+7. Run the frontend:
 
 ```bash
 npm start
@@ -68,7 +68,7 @@ npm start
 🌍 Deployment
 Frontend (Vercel): ai-code-search-fullstack.vercel.app
 
-Backend (Render): t
+Backend (Render): https://ai-code-search-fullstack.onrender.com
 
 🧑‍💻 Example Queries
 -Give me binary search code in C++
